@@ -29,7 +29,7 @@ async def get_chunk(
     query: str = "",
     filter: "enums.MessagesFilter" = enums.MessagesFilter.EMPTY,
     offset: int = 0,
-    limit: int = 100,
+    limit: int = 0,
     from_user: Union[int, str] = None
 ) -> List["types.Message"]:
     r = await client.invoke(
