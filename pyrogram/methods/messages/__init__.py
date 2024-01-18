@@ -42,6 +42,7 @@ from .retract_vote import RetractVote
 from .search_global import SearchGlobal
 from .search_global_count import SearchGlobalCount
 from .search_messages import SearchMessages
+from .iter_messages import IterMessages
 from .search_messages_count import SearchMessagesCount
 from .send_animation import SendAnimation
 from .send_audio import SendAudio
@@ -106,6 +107,7 @@ class Messages(
     EditInlineReplyMarkup,
     SendDice,
     SearchMessages,
+    IterMessages,
     SearchGlobal,
     CopyMessage,
     CopyMediaGroup,
